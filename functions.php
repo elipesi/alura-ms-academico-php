@@ -21,7 +21,7 @@ function rabbitMqConnection(): AMQPStreamConnection
             sleep(5);
             echo 'Retrying' . PHP_EOL;
         }
-    } while(!isset($connection));
+    } while (!isset($connection));
 
     return $connection;
 }
