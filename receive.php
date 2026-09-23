@@ -9,7 +9,8 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 //linha modificada
 R::setup(
-    getenv('DB_DSN'), getenv('DB_USERNAME'), 
+    getenv('DB_DSN'), 
+    getenv('DB_USERNAME'), 
     getenv('DB_PASSWORD'));
 
 $connection = rabbitMqConnection();
